@@ -11,14 +11,17 @@ from telegram.ext import (
 # Определяем состояния для ConversationHandler
 MAIN_MENU, FILMS_MENU = range(2)
 
-# Тексты сообщений
+# Токен бота 
+application = Application.builder().token("TOKEN").build()
+
+# Текст сообщений
 WELCOME_TEXT = """
 Привет! 👋 Я твой помощник в мире развлечений. 
 Я могу помочь тебе с фильмами, сериалами и книгами. 
 Выбери категорию ниже и начнем! 🎬📺📚
 """
 
-# Клавиатуры
+# Клавиатура
 main_menu_keyboard = [
     ["Фильмы", "Сериалы"],
     ["Книги"]
@@ -81,9 +84,6 @@ async def cancel(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     return ConversationHandler.END
 
 def main() -> None:
-    # Токен бота
-    application = Application.builder().token("TOKEN").build()
-
     # Создаем ConversationHandler
     conv_handler = ConversationHandler(
         entry_points=[CommandHandler('start', start)],
