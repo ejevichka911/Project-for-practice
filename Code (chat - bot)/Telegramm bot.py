@@ -23,7 +23,7 @@ from content_forwarder import ContentForwarder
 ) = range(19)
 
 # Токен бота
-TOKEN = "7462511961:AAG2LwhbWPX3GHP-wLHmMHnohu81l9_fWoQ"
+TOKEN = "..."
 application = Application.builder().token(TOKEN).build()
 
 #Группа в тг
