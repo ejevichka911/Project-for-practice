@@ -1,4 +1,4 @@
-# Project-for-practice
+# Project-for-practic
 This Telegram bot is designed for convenient media content management - movies, TV series, and books. It helps users organize their collections, take notes, save favorites, and get recommendations in the dedicated "Recommendations" section through a flexible filtering system.
 
 The bot features an intuitive button-based menu that allows browsing available content lists, viewing details (release year, genre, rating, etc.), and saving personal notes. Users can add their favorite movies, series, and books to a separate collection for quick access. My bot also includes a recommendations feature.
